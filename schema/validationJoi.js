@@ -9,11 +9,11 @@ const joiNoteAddSchema = Joi.object({
   content: Joi.string().min(2)
 });
 
-const joiCategoryAddSchema = Joi.object({
-  name: Joi.string().min(2),
+const joiChangeContentSchema = Joi.object({
+  content: Joi.string().min(2),
   dataStart: Date,
   dataEnd: Date,
 });
 
 
-module.exports = { joiNoteAddSchema, joiCategoryAddSchema };
+module.exports = { joiNoteAddSchema, joiChangeContentSchema };

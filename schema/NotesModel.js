@@ -10,11 +10,9 @@ const noteSchema = new Schema({
     default: "Books",
   },
   createData: Date,
- 
-  id: {
-    type: String,
-    required: [true, "CategoryId is required"],   
-  },
+  dataStart: Date,
+  dataEnd: Date,
+  
   categoryName: {
     type: String,
     required: [true, "Description is required"],  
